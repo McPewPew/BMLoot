@@ -1,4 +1,4 @@
-DEFAULT_CHAT_FRAME:AddMessage("Testing, testing, 1, 0, 1);
+DEFAULT_CHAT_FRAME:AddMessage("Testing, testing", 1, 0, 1);
 BMLoot = CreateFrame("Frame")
 BMLoot:RegisterEvent("START_LOOT_ROLL") 
 BMLoot:RegisterEvent("LOOT_BIND_CONFIRM")
