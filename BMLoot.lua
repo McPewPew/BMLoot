@@ -13,7 +13,7 @@ BMLoot:SetScript("OnEvent", function()
         end	
 	elseif event == "ZONE_CHANGED_NEW_AREA" then
 		if GetRealZoneText() == "The Black Morass" then
-			DEFAULT_CHAT_FRAME:AddMessage("You have entered "..GetRealZoneText().." auto-needing on Corrupted Sand")
+			DEFAULT_CHAT_FRAME:AddMessage("You have entered "..GetRealZoneText().." auto-needing on Corrupted Sand and Arcane Essence")
 		end
 	end
 end)
