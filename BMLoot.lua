@@ -7,7 +7,7 @@ BMLoot:SetScript("OnEvent", function()
     if event == "START_LOOT_ROLL" then
         local rollID, rollTime, rollItemLink, rollQuantity, rollPlayer = arg1, arg2, arg3, arg4, arg5
 		local texture, name, count, quality = GetLootRollItemInfo(rollID)
-        if name == "Corrupted Sand" or name == "Arcane Essence" and GetZoneText() == "The Black Morass" then
+        if GetZoneText() == "The Black Morass" and (name == "Corrupted Sand" or name == "Arcane Essence") then
             RollOnLoot(rollID, 1)
 			StaticPopup1Button1:Click()		
         end	
